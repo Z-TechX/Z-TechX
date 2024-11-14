@@ -740,7 +740,7 @@ $(document).ready(function() {
 
   // Add the WhatsApp image to the link
   $('<img>', {
-      src: '/assets/img/icon-img/whatsapp.png',  // Replace with your actual image URL
+      src: '/Z-TechX/assets/img/icon-img/whatsapp.png',  // Replace with your actual image URL
       alt: 'WhatsApp',
       css: {
           width: '90px',
