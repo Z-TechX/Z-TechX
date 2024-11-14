@@ -64,9 +64,8 @@
                             <nav>
                                 <ul>
                                     <li><a href=""> HOME </a></li>
-                                    <li><a href="about"> ABOUT  </a></li>
-                                    <!-- <li ><a href="shop.html"> SHOP </i> </a></li> -->
-                                    <li class="mega-menu-position top-hover"><a href="course"> COURSES <i class="fa fa-angle-down"></i></a>
+                                    <li><a href="about/"> ABOUT  </a></li>
+                                    <li class="mega-menu-position top-hover"><a href="course/"> COURSES <i class="fa fa-angle-down"></i></a>
                                         <ul class="mega-menu">
                                             <li>
                                                 <ul>
@@ -143,7 +142,7 @@
                             <p class="animated">Bringing technology to life through interactive projects that spark curiosity, build essential skills, and open doors to new opportunities for everyone</p>
                             <div class="slider-btn">
                                 <a class="animated default-btn btn-green-color" href="course/">COURSES</a>
-                                <a class="animated default-btn btn-white-color" href="contact.html">CONTACT US</a>
+                                <a class="animated default-btn btn-white-color" href="contact/">CONTACT US</a>
                             </div>
                         </div>
                     </div>
@@ -153,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <div class="single-slider slider-height-1 bg-img" style="background-image:url(assets/img/slider/slider1.png);">
+        <div class="single-slider slider-height-1 bg-img" style="background-image:url(assets/img/slider/slider1.png);"  oncontextmenu="return false">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 col-md-7 col-12 col-sm-12">
@@ -184,7 +183,7 @@
                     </div>
                     <div class="choose-content">
                         <h3>Kids Coding Class</h3>
-                        <p>Dive into fun and interactive sessions where kids start learning programming fundamentals in an engaging and hands-on way, building projects they'll be proud of. </p>
+                        <p>Engage in fun, hands-on sessions where kids explore coding basics through creative projects, building confidence and skills in a supportive environment. </p>
                     </div>
                 </div>
             </div>
@@ -195,7 +194,7 @@
                     </div>
                     <div class="choose-content">
                         <h3>Teen Developer</h3>
-                        <p>For teens eager to advance in coding, our program emphasizes real-world skills and projects, helping them build a solid foundation in app development and problem-solving. </p>
+                        <p>Designed for teens to build advanced coding skills, focusing on real-world projects that develop problem-solving and app development expertise. </p>
                     </div>
                 </div>
             </div>
@@ -206,7 +205,7 @@
                     </div>
                     <div class="choose-content">
                         <h3>Language Programmes</h3>
-                        <p>Develop skills in popular programming languages like Python, JavaScript, and more. This track is perfect for learning coding applicable to any field in tech. </p>
+                        <p>Master popular programming languages like Python and JavaScript, gaining versatile skills that apply to diverse tech fields. </p>
                     </div>
                 </div>
             </div>
@@ -217,7 +216,7 @@
                     </div>
                     <div class="choose-content">
                         <h3>Career Track</h3>
-                        <p>Start your journey towards a tech career with project-based learning in fields like software development, data science, and web design, preparing you for future success. </p>
+                        <p>Prepare for a tech career with project-based learning in software development, data science, and web design, laying the foundation for success. </p>
                     </div>
                 </div>
             </div>
@@ -235,7 +234,7 @@
                     </div>
                     <p>With hands-on programs for kids, teens, and adults, we offer a gateway to innovation and future-proof skills. Join us to turn curiosity into confidence and build a tech-savvy future!</p>
                     <div class="about-btn mt-45">
-                        <a class="default-btn" href="about-us.html">ABOUT US</a>
+                        <a class="default-btn" href="about/">ABOUT US</a>
                     </div>
                 </div>
             </div>
@@ -257,7 +256,7 @@
             <p>Our courses are designed to engage learners through interactive, hands-on experiences, allowing essential tech skills to be developed with real-world applications. Students are empowered to build confidence and prepare for future success in technology.</p>
         </div>
         <div class="course-slider-active nav-style-1 owl-carousel">
-            <div class="single-course">
+            <div class="single-course course-details-pointer">
                 <div class="course-img" onclick="openCourse('kids-course')">
                     <img class="animated" src="assets/img/course/course-1.png" alt="">
                     <span>Addmission Going On</span>
@@ -278,11 +277,11 @@
                         </div>
                     </div>
                     <div class="course-btn">
-                        <a class="default-btn" href="https://wa.me/+8801304072381?text=Hi!%20I%27m%20interested%20in%20the%20Kids%20Coding%20Class.%20Could%20you%20tell%20me%20more%20about%20the%20course%20structure%20and%20schedule?" target="_blank">APPLY NOW</a>
+                        <a class="default-btn" onclick="openCourse('kids-course')">Details</a>
                     </div>
                 </div>
             </div>
-            <div class="single-course">
+            <div class="single-course course-details-pointer">
                 <div class="course-img" onclick="openCourse('teens-course')">
                     <img class="animated" src="assets/img/course/course-2.png" alt="">
                 </div>
@@ -302,11 +301,11 @@
                         </div>
                     </div>
                     <div class="course-btn">
-                        <a class="default-btn" href="https://wa.me/+8801304072381?text=Hello!%20I%27d%20love%20to%20know%20more%20about%20the%20Teen%20Developer%20program.%20Can%20you%20share%20details%20on%20the%20projects%20and%20topics%20covered?" target="_blank">APPLY NOW</a>
+                        <a class="default-btn" onclick="openCourse('teens-course')">Details</a>
                     </div>
                 </div>
             </div>
-            <div class="single-course">
+            <div class="single-course course-details-pointer">
                 <div class="course-img" onclick="openCourse('language-course')">
                     <img class="animated" src="assets/img/course/course-3.png" alt="">
                 </div>
@@ -326,11 +325,11 @@
                         </div>
                     </div>
                     <div class="course-btn">
-                        <a class="default-btn" href="https://wa.me/+8801304072381?text=Hi!%20I%27m%20interested%20in%20the%20Language%20Programs.%20Could%20you%20provide%20information%20on%20the%20program%20details%20and%20course%20options?" target="_blank">APPLY NOW</a>
+                        <a class="div-btn" onclick="openCourse('language-course')">Details</a>
                     </div>
                 </div>
             </div>
-            <div class="single-course">
+            <div class="single-course course-details-pointer">
                 <div class="course-img" onclick="openCourse('career-course')">
                     <img class="animated" src="assets/img/course/course-4.png" alt="">
                     <span>Custom Special Course</span>
@@ -351,11 +350,11 @@
                         </div>
                     </div>
                     <div class="course-btn">
-                        <a class="default-btn" href="https://wa.me/+8801304072381?text=Hello!%20I%27m%20interested%20in%20the%20Career%20Track%20course.%20Could%20you%20share%20information%20on%20the%20topics%20and%20job%20preparation%20guidelines?" target="_blank">APPLY NOW</a>
+                        <a class="default-btn" onclick="openCourse('career-course')">Details</a>
                     </div>
                 </div>
             </div>
-            <div class="single-course">
+            <div class="single-course course-details-pointer">
                 <div class="course-img" onclick="openCourse('java-course')">
                     <img class="animated" src="assets/img/course/course-5.png" alt="">
                 </div>
@@ -375,11 +374,11 @@
                         </div>
                     </div>
                     <div class="course-btn">
-                        <a class="default-btn" href="https://wa.me/+8801304072381?text=Hi!%20I%27d%20like%20to%20enquire%20about%20the%20Java%20Programming%20course.%20Could%20you%20give%20me%20more%20details%20on%20course%20duration%20and%20project%20work?" target="_blank">APPLY NOW</a>
+                        <a class="default-btn" onclick="openCourse('java-course')">Details</a>
                     </div>
                 </div>
             </div>
-            <div class="single-course">
+            <div class="single-course course-details-pointer">
                 <div class="course-img" onclick="openCourse('python-course')">
                     <img class="animated" src="assets/img/course/course-6.png" alt="">
                 </div>
@@ -399,11 +398,11 @@
                         </div>
                     </div>
                     <div class="course-btn">
-                        <a class="default-btn" href="https://wa.me/+8801304072381?text=Hello!%20I%27m%20interested%20in%20the%20Python%20Beginner%20to%20Advance%20course.%20Can%20you%20tell%20me%20more%20about%20the%20course%20structure%20and%20prerequisites?" target="_blank">APPLY NOW</a>
+                        <a class="default-btn" onclick="openCourse('python-course')">Details</a>
                     </div>
                 </div>
             </div>
-            <div class="single-course">
+            <div class="single-course course-details-pointer">
                 <div class="course-img" onclick="openCourse('web-course')">
                     <img class="animated" src="assets/img/course/course-7.png" alt="">
                 </div>
@@ -423,7 +422,7 @@
                         </div>
                     </div>
                     <div class="course-btn">
-                        <a class="default-btn" href="https://wa.me/+8801304072381?text=Hi!%20I%27m%20interested%20in%20the%20Web%20Developer%20course.%20Could%20you%20share%20information%20on%20the%20topics%20and%20projects%20covered?" target="_blank">APPLY NOW</a>
+                        <a class="default-btn" onclick="openCourse('web-course')">Details</a>
                     </div>
                 </div>
             </div>
@@ -615,7 +614,7 @@
 </div>
 
 <footer class="footer-area">
-    <div class="footer-top bg-img default-overlay pt-130 pb-80" style="background-image:url(assets/img/bg/bg-4.png);">
+    <div class="footer-top bg-img default-overlay pt-100 pb-40" style="background-image:url(assets/img/bg/bg-4.png);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -649,7 +648,7 @@
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="">Home</a></li>
                                 <li><a href="about/">About Us</a></li>
                                 <li><a href="course/">Courses</a></li>
                             </ul>
@@ -671,12 +670,13 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-2 col-md-5 col-sm-2">
                     <div class="footer-widget mb-10">
                         <div class="footer-title">
                             <div class="footer-list">
                                 <div class="responsive-iframe">
-                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FZtechX.edu&tabs=timeline&width=500&height=331&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FZtechX.edu%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -693,7 +693,7 @@
                         <p>
                             Copyright ©
                             <a href="">Z-TechX</a>
-                            . All rights reserved.
+                            . All Right Reserved.
                         </p>
                     </div>
                 </div>
@@ -753,7 +753,7 @@
         // Store the selected course ID in localStorage
         localStorage.setItem('selectedCourse', courseId);
         // Redirect to the course page
-        window.location.href = 'course/';
+        window.location.href = './course/';
     }
 </script>
 </body>
