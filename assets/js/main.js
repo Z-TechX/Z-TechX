@@ -726,6 +726,47 @@
         scrollSpeed: 900,
         animation: 'fade'
     });
+
+
+    // Document ready function to ensure all elements are loaded
+$(document).ready(function() {
+  // Add the WhatsApp link element dynamically
+  const whatsappLink = $('<a>', {
+      id: 'whatsappLink',
+      href: 'https://wa.me/+8801304072381',  // Replace with your actual WhatsApp link
+      target: '_blank',
+      style: 'position: fixed; z-index: 2147483647; display: block; right: 20px;'
+  });
+
+  // Add the WhatsApp image to the link
+  $('<img>', {
+      src: '/assets/img/icon-img/whatsapp.png',  // Replace with your actual image URL
+      alt: 'WhatsApp',
+      css: {
+          width: '90px',
+          height: '90px'
+      }
+  }).appendTo(whatsappLink);
+
+  // Append the WhatsApp link to the body
+  $('body').append(whatsappLink);
+
+  // Function to adjust the position of the WhatsApp link above scrollUp
+  function positionWhatsAppLink() {
+      const scrollUpButton = $('#scrollUp');
+      if (scrollUpButton.is(':visible')) {
+          const scrollUpBottom = parseInt(scrollUpButton.css('bottom'), 10);
+          whatsappLink.css('bottom', `${scrollUpBottom + 50}px`); // Position above scrollUp
+      } else {
+          whatsappLink.css('bottom', '20px');  // Default position if scrollUp is hidden
+          
+      }
+  }
+
+  // Run the positioning function initially and on scroll
+  positionWhatsAppLink();
+  $(window).on('scroll', positionWhatsAppLink);
+});
     
     
     
