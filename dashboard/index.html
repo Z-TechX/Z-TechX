@@ -204,20 +204,76 @@
     </header>
 
     <main>
-        <h2>Messages</h2>
-        <table id="messages-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Subject</th>
-                    <th>Message</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Data will be populated here -->
-            </tbody>
-        </table>
+        <div class="container mb-100">
+            <button class="default-btn btn-green-color" id="messages">Messages</button>
+            <button class="default-btn btn-green-color" id="add">Add Courses</button>
+            <button class="default-btn btn-green-color" id="modify"> Courses</button>
+            <button class="default-btn btn-green-color" id="promo">Promo </button>
+            <button class="default-btn btn-green-color" id="generation">Generation </button>
+            <button class="default-btn btn-green-color" id="collection">Collection </button>
+        </div>
+        <div class="display" id="Messages">
+            <h2>Messages</h2>
+            <table id="messages-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Subject</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="display pl-20 pr-20" id="Add">
+            <h2>Add New Course</h2>
+            <form id="courseForm">
+                <label for="courseName">Course Name:</label>
+                <input type="text" id="courseName" required>
+    
+                <label for="courseDetails">Course Details:</label>
+                <textarea id="courseDetails" required></textarea>
+    
+                <label for="maxStudents">Max Students per Batch:</label>
+                <input type="number" id="maxStudents" required>
+    
+                <label for="duration">Duration:</label>
+                <input type="text" id="duration" required>
+    
+                <label for="fee">Fee:</label>
+                <input type="text" id="fee" required>
+    
+                <label for="highlights">Highlights:</label>
+                <textarea id="highlights" required></textarea>
+    
+                <label for="outcomes">Course Outcomes:</label>
+                <textarea id="outcomes" placeholder="Use commas to separate each outcome" required></textarea>
+    
+                <label for="roadmapLink">Roadmap Link (Optional):</label>
+                <input type="url" id="roadmapLink">
+    
+                <label for="targetAudience">Target Audience:</label>
+                <input type="text" id="targetAudience" required>
+    
+                <label for="courseImage">Course Image:</label>
+                <input type="file" id="courseImage" accept="image/*" required>
+    
+                <button type="submit">Add Course</button>
+            </form>
+        </div>
+
+        <div class="display pl-20 pr-20" id="Promo">
+            <h2>Promo Message of the Day</h2>
+            <form onsubmit="msgThis(); return false;" id="messagePromo">
+                <label for="promoMessage">Message:</label>
+                <input type="text" id="Message">
+                <button class="default-btn" type="submit">Submit</button>
+            </form>
+        </div>
     </main>
 
 <footer class="footer-area">
@@ -358,7 +414,27 @@
 <script src="../assets/js/ajax-mail.js"></script>
 <!-- Main JS -->
 <script src="../assets/js/main.js"></script>
+<script>
+    // Hide all display sections on load
+    document.addEventListener('DOMContentLoaded', function () {
+        const displays = document.querySelectorAll('.display');
+        displays.forEach(display => display.style.display = 'none');
+        
+        // Button click event handler
+        const buttons = document.querySelectorAll('.default-btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                // Hide all display sections
+                displays.forEach(display => display.style.display = 'none');
+                
+                // Show the relevant section based on button ID
+                const sectionId = button.id.charAt(0).toUpperCase() + button.id.slice(1);
+                document.getElementById(sectionId).style.display = 'block';
+            });
+        });
+    });
 
+</script>
 </body>
 
 </html>
