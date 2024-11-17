@@ -3830,6 +3830,10 @@ textarea:focus {
   padding-bottom: 60px;
 }
 
+.Notice{
+  z-index: 252220; 
+}
+
 .nav-style-1.owl-carousel > .owl-nav button {
   background-color: #fff;
   border-radius: 50px 0 0 50px;
