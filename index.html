@@ -753,6 +753,7 @@
 <script>
 	    
     window.onload = async function () {
+	    console.log("html loaded");
     const messageRef = firebase.database().ref("Message/Message");
     try {
         messageRef.once("value").then((snapshot)=>{
