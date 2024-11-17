@@ -50,3 +50,26 @@ function logout() {
             alert("Logout failed.");
         });
 }
+
+var Messages = firebase.database().ref("Message/");
+function msgThis() {
+    // Get the values from the form when the submit button is clicked
+    console.log("Button clicked");
+    var Message = document.getElementById("Message").value;
+    Message = Message.toUpperCase();
+    console.log("Data Taken");
+
+    
+    Messages.set({
+        "Message": Message
+    })
+    .then(function() {
+        console.log("Data saved successfully!");
+    })
+    .catch(function(error) {
+        console.error("Error saving data: ", error);
+    });
+ // Clear the form fields (optional)
+    document.getElementById("messagePromo").reset();
+    
+}
